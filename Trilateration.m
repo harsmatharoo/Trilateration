@@ -14,7 +14,7 @@ vcty_x = 40/1000;
 vcty_y = 20/1000; 
 vcty_z = 5/1000; 
 
-%%%%%%%%%%%%%Actual distances%%%%%%%%%%%%%
+%%%%%%%%%%%%%Actual distances%%%%%%%%%%%%% - the real ones as given
 Interval = [0 : 20 : 100]'; 
 
 % x position
@@ -48,6 +48,8 @@ end
 r 
 
 %%%%%%%%%%%%%Estimated distances%%%%%%%%%%%%%
+
+% Used my student number to get the seeding
 rng(400185871); %random seed
 stdDev = 2/1000; %standard dev in km
 mean = 0;
@@ -114,8 +116,8 @@ R_arr
 plot3 (R_arr(6:11,1), R_arr(6:11,2),R_arr(6:11,3),'b')
 hold on
 plot3 (XYZ(6:11,1), XYZ(6:11,2),XYZ(6:11,3),'r')
-xlabel('x');
-ylabel('y');
-zlabel('z');
+xlabel('x axis');
+ylabel('y axis');
+zlabel('z axis');
 legend('Estimated', 'Actual');
 grid on;
