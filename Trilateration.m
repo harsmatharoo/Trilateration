@@ -1,4 +1,4 @@
-% Beacon Locations
+% Beacon Locations -- initial as to begin with
 b1 = [0 0.5 0];
 b2 = [3.5 0 1];
 b3 = [0 1.5 0];
